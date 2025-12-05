@@ -1,0 +1,241 @@
+{
+  "worship": {
+    "id": "worship",
+    "title": "Worship",
+    "points": [
+      {
+        "id": "scriptureGospelCentrality",
+        "title": "Scripture & Gospel Centrality",
+        "description": "Scripture as Authority and Centrality of the Gospel",
+        "subQuestions": [
+          {
+            "id": "1.1",
+            "text": "Is Scripture viewed as the inerrant Word of God and used as the absolute standard for faith and practice?",
+            "order": 1
+          },
+          {
+            "id": "1.2",
+            "text": "Is there a general understanding that the Gospel is the grand and central theme of the Bible?",
+            "order": 2
+          },
+          {
+            "id": "1.3",
+            "text": "Are there clear pathways and practices that facilitate ongoing Gospel renewal?",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "worshipPreachingSacraments",
+        "title": "Worship, Preaching, Sacraments",
+        "description": "Worship, Preaching, Sacraments/Ordinances",
+        "subQuestions": [
+          {
+            "id": "2.1",
+            "text": "Is there consistent weekly corporate worship that invites members to glorify God and make the Gospel clear and near?",
+            "order": 1
+          },
+          {
+            "id": "2.2",
+            "text": "Are sound, expository, Gospel-centered and contextual sermons preached weekly?",
+            "order": 2
+          },
+          {
+            "id": "2.3",
+            "text": "Are the sacraments/ordinances of baptism and the Lord's Supper practised regularly and meaningfully?",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "primacyOfPrayer",
+        "title": "Primacy of Prayer",
+        "description": "Primacy of Prayer",
+        "subQuestions": [
+          {
+            "id": "3.1",
+            "text": "Do elders and leaders enjoy and model a vibrant, Gospel-centered prayer life?",
+            "order": 1
+          },
+          {
+            "id": "3.2",
+            "text": "Is prayer a regular and joyful part of everyday church life?",
+            "order": 2
+          },
+          {
+            "id": "3.3",
+            "text": "Are members being invited and equipped for a true and rich prayer life?",
+            "order": 3
+          }
+        ]
+      }
+    ]
+  },
+  "discipleship": {
+    "id": "discipleship",
+    "title": "Discipleship",
+    "points": [
+      {
+        "id": "discipleshipPracticedIntentionally",
+        "title": "Discipleship Practiced Intentionally",
+        "description": "Discipleship Practiced Intentionally",
+        "subQuestions": [
+          {
+            "id": "4.1",
+            "text": "Is the Gospel understood as the primary motivation for sanctification?",
+            "order": 1
+          },
+          {
+            "id": "4.2",
+            "text": "Is 'all of life' discipleship taught and practiced as part of church life?",
+            "order": 2
+          },
+          {
+            "id": "4.3",
+            "text": "Are there clear pathways for growth as disciples both for new believers and mature?",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "ntPatternsOfChurchLife",
+        "title": "NT Patterns of Church Life",
+        "description": "New Testament Patterns of Church Life",
+        "subQuestions": [
+          {
+            "id": "5.1",
+            "text": "Is every member encouraged and equipped for ministry?",
+            "order": 1
+          },
+          {
+            "id": "5.2",
+            "text": "Are small groups thriving, with leaders discipling members?",
+            "order": 2
+          },
+          {
+            "id": "5.3",
+            "text": "Is church discipline understood and practiced Biblically?",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "leadershipDevelopment",
+        "title": "Leadership Development",
+        "description": "Leadership Development and Biblically Qualified Elders (Self-Governing)",
+        "subQuestions": [
+          {
+            "id": "6.1",
+            "text": "Does the church have a clear Leadership Development Pathway?",
+            "order": 1
+          },
+          {
+            "id": "6.2",
+            "text": "Is there a clear pathway to identify and nurture Small Group Leaders?",
+            "order": 2
+          },
+          {
+            "id": "6.3",
+            "text": "Is there a pathway to identify, assess, train, and commission Deacons and Elders?",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "cultureOfGenerosity",
+        "title": "Culture of Generosity",
+        "description": "Culture of Generosity",
+        "subQuestions": [
+          {
+            "id": "7.1",
+            "text": "Is there regular and healthy preaching on generosity?",
+            "order": 1
+          },
+          {
+            "id": "7.2",
+            "text": "Is there a culture of generosity and consistent giving?",
+            "order": 2
+          },
+          {
+            "id": "7.3",
+            "text": "Are all church operations funded through member giving (self-supporting)?",
+            "order": 3
+          }
+        ]
+      }
+    ]
+  },
+  "mission": {
+    "id": "mission",
+    "title": "Mission",
+    "points": [
+      {
+        "id": "cityCultureEngagement",
+        "title": "City Culture Engagement",
+        "description": "City Culture and People are Being Engaged with the Gospel; People Being Saved",
+        "subQuestions": [
+          {
+            "id": "8.1",
+            "text": "Is the church ministering to Christians and non-Christians simultaneously in worship?",
+            "order": 1
+          },
+          {
+            "id": "8.2",
+            "text": "Are vibrant Faith & Work practices integrated into discipleship?",
+            "order": 2
+          },
+          {
+            "id": "8.3",
+            "text": "Is there intentional and compassionate practice of Mercy and Justice?",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "evangelismContextualization",
+        "title": "Evangelism Contextualization",
+        "description": "Believers Able to Share the Gospel in Multiple Contextual Ways",
+        "subQuestions": [
+          {
+            "id": "9.1",
+            "text": "Do believers understand the Gospel clearly and are they being equipped to share it?",
+            "order": 1
+          },
+          {
+            "id": "9.2",
+            "text": "Are members building friendships with non-Christians and engaging them in Gospel conversations?",
+            "order": 2
+          },
+          {
+            "id": "9.3",
+            "text": "Do members understand and address cultural \"defeater beliefs\" winsomely?",
+            "order": 3
+          }
+        ]
+      },
+      {
+        "id": "churchPlantingPartnerships",
+        "title": "Church Planting & Partnerships",
+        "description": "Church Planting, Partnerships & Movement",
+        "subQuestions": [
+          {
+            "id": "10.1",
+            "text": "Do leaders and members understand and appreciate the Biblical charge to plant churches?",
+            "order": 1
+          },
+          {
+            "id": "10.2",
+            "text": "Does the church have meaningful partnerships with other churches and para-church organizations?",
+            "order": 2
+          },
+          {
+            "id": "10.3",
+            "text": "Does the leadership demonstrate a movement mindset and intentionally live it out?",
+            "order": 3
+          }
+        ]
+      }
+    ]
+  }
+}
+
