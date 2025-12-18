@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -18,6 +18,17 @@ export default function LandingPage() {
     resolver: zodResolver(userInfoSchema),
   });
 
+  useEffect(() => {
+    // Ensure the dotlottie-wc script is loaded
+    if (typeof window !== "undefined" && !customElements.get("dotlottie-wc")) {
+      const script = document.createElement("script");
+      script.src =
+        "https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js";
+      script.type = "module";
+      document.head.appendChild(script);
+    }
+  }, []);
+
   const onSubmit = async (data: UserInfo) => {
     setIsSubmitting(true);
     // Store user info in sessionStorage to pass to assessment
@@ -27,93 +38,72 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-warm-sand flex items-center justify-center p-4">
-      <div className="w-full max-w-2xl">
-        <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-city-blue mb-4">
-              Church Health Index
-            </h1>
-            <p className="text-xl text-urban-steel mb-2">
-              Redeemer City to City
-            </p>
-            <p className="text-lg text-urban-steel/80">
-              A Gospel-Centered Self-Assessment Tool
-            </p>
-          </div>
+    <div className="min-h-screen flex relative overflow-hidden">
+      {/* Logo - Top Left */}
+      <div className="absolute top-6 left-6 z-20 lg:top-8 lg:left-8">
+        <img
+          src="/redeemer-logo.svg"
+          alt="Redeemer City to City"
+          className="h-auto w-auto max-h-12"
+          style={{ maxWidth: '200px' }}
+        />
+      </div>
 
-          {/* Description */}
-          <div className="mb-8 text-urban-steel">
-            <p className="mb-4">
-              Welcome to the Church Health Index. This assessment will help you
-              evaluate your church across 10 key areas of gospel-centered
-              ministry, organized into three sections:
-            </p>
-            <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>
-                <strong className="text-city-blue">Worship</strong> - Scripture
-                & Gospel Centrality, Worship/Preaching/Sacraments, Primacy of
-                Prayer
-              </li>
-              <li>
-                <strong className="text-city-blue">Discipleship</strong> -
-                Intentional Discipleship, NT Patterns, Leadership Development,
-                Culture of Generosity
-              </li>
-              <li>
-                <strong className="text-city-blue">Mission</strong> - City
-                Culture Engagement, Evangelism Contextualization, Church
-                Planting & Partnerships
-              </li>
-            </ul>
-            <p className="mt-4">
-              Please provide your information below to begin the assessment.
+      {/* Left Panel - Form */}
+      <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-16 py-12 bg-warm-sand">
+        <div className="max-w-md mx-auto w-full">
+          {/* Main Heading */}
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-city-blue mb-4">
+              A Mirror, Not a Scorecard
+            </h2>
+            <p className="text-base text-urban-steel leading-relaxed">
+              This is not a test to pass. It is a tool to help you look honestly at your church. It helps you ask: Is the Gospel truly at the center of everything we do?
             </p>
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+            {/* First Name */}
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-urban-steel mb-2"
+              >
+                Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                {...register("name")}
+                className="w-full px-4 py-3 bg-white text-urban-steel border border-light-city-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-city-blue focus:border-transparent transition-all placeholder-gray-400"
+                placeholder="Your name"
+              />
+              {errors.name && (
+                <p className="mt-1 text-sm text-grace-coral">
+                  {errors.name.message}
+                </p>
+              )}
+            </div>
+
             {/* Email */}
             <div>
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-urban-steel mb-2"
               >
-                Email Address <span className="text-grace-coral">*</span>
+                Email
               </label>
               <input
                 id="email"
                 type="email"
                 {...register("email")}
-                className="w-full px-4 py-3 bg-white text-urban-steel border border-light-city-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-city-blue focus:border-transparent"
-                placeholder="your.email@example.com"
+                className="w-full px-4 py-3 bg-white text-urban-steel border border-light-city-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-city-blue focus:border-transparent transition-all placeholder-gray-400"
+                placeholder="Email address"
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-grace-coral">
                   {errors.email.message}
-                </p>
-              )}
-            </div>
-
-            {/* Name */}
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-urban-steel mb-2"
-              >
-                Your Name <span className="text-grace-coral">*</span>
-              </label>
-              <input
-                id="name"
-                type="text"
-                {...register("name")}
-                className="w-full px-4 py-3 bg-white text-urban-steel border border-light-city-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-city-blue focus:border-transparent"
-                placeholder="John Doe"
-              />
-              {errors.name && (
-                <p className="mt-1 text-sm text-grace-coral">
-                  {errors.name.message}
                 </p>
               )}
             </div>
@@ -124,14 +114,14 @@ export default function LandingPage() {
                 htmlFor="churchName"
                 className="block text-sm font-medium text-urban-steel mb-2"
               >
-                Church Name <span className="text-grace-coral">*</span>
+                Church Name
               </label>
               <input
                 id="churchName"
                 type="text"
                 {...register("churchName")}
-                className="w-full px-4 py-3 bg-white text-urban-steel border border-light-city-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-city-blue focus:border-transparent"
-                placeholder="Redeemer Church"
+                className="w-full px-4 py-3 bg-white text-urban-steel border border-light-city-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-city-blue focus:border-transparent transition-all placeholder-gray-400"
+                placeholder="Church name"
               />
               {errors.churchName && (
                 <p className="mt-1 text-sm text-grace-coral">
@@ -144,21 +134,89 @@ export default function LandingPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-city-blue text-white py-3 px-6 rounded-lg font-semibold hover:bg-city-blue/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-city-blue text-white py-3 px-6 rounded-lg font-semibold hover:bg-city-blue/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
-              {isSubmitting ? "Starting Assessment..." : "Begin Assessment"}
+              {isSubmitting ? (
+                "Starting Reflection..."
+              ) : (
+                <>
+                  Start Reflection
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </>
+              )}
             </button>
           </form>
 
-          {/* Admin Access Button */}
-          <div className="mt-6 pt-6 border-t border-light-city-gray">
+          {/* Pagination Dots */}
+          <div className="flex justify-center gap-2 mt-8">
+            <div className="w-2 h-2 rounded-full bg-city-blue"></div>
+            <div className="w-2 h-2 rounded-full bg-light-city-gray"></div>
+            <div className="w-2 h-2 rounded-full bg-light-city-gray"></div>
+          </div>
+
+          {/* Admin Access */}
+          <div className="mt-6 text-center">
             <button
               type="button"
               onClick={() => router.push("/admin")}
-              className="w-full text-sm text-urban-steel hover:text-city-blue transition-colors"
+              className="text-sm text-urban-steel hover:text-city-blue transition-colors"
             >
               Admin Access
             </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Panel - Visual Showcase */}
+      <div className="hidden lg:flex lg:w-1/2 bg-white bg-dot-pattern relative overflow-hidden">
+        <div className="relative z-10 flex flex-col justify-center items-center px-12 py-16 w-full">
+          {/* Hero Quote - Centered */}
+          <div className="max-w-2xl mb-12 text-center">
+            <p className="text-3xl md:text-4xl font-serif text-city-blue italic leading-relaxed mb-8">
+              "The Gospel is not the ABCs of our lives — it is the A to Z."
+            </p>
+          </div>
+
+          {/* Lottie Animation */}
+          <div className="relative mb-12 max-w-md w-full flex justify-center items-center">
+            <div className="lottie-container" style={{ width: "300px", height: "300px" }}>
+              <dotlottie-wc
+                src="https://lottie.host/ea863f04-de08-4a7a-90e8-113f79db7f2d/FSW7ZUp0cH.lottie"
+                style={{ width: "100%", height: "100%" }}
+                autoplay
+                loop
+              />
+            </div>
+          </div>
+
+          {/* Context Explanation - Centered */}
+          <div className="max-w-lg text-center">
+            <p className="text-base text-urban-steel leading-relaxed mb-4">
+              We look at three things:
+            </p>
+            <div className="text-base text-urban-steel leading-relaxed space-y-2">
+              <p>1. Roots (Worship & Prayer)</p>
+              <p>2. Life (Discipleship)</p>
+              <p>3. Fruit (Mission to the City)</p>
+            </div>
+          </div>
+
+          {/* Pagination Dots */}
+          <div className="flex justify-center gap-2 mt-8">
+            <div className="w-2 h-2 rounded-full bg-light-city-gray"></div>
+            <div className="w-2 h-2 rounded-full bg-light-city-gray"></div>
           </div>
         </div>
       </div>

@@ -111,3 +111,9 @@ export function getPointScoresArray(scores: CalculatedScores): number[] {
   ];
 }
 
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Path for curved text around the ring - clockwise from left -->
+    <path id="ringPath" d="M 180,300 A 120,120 0 1,1 420,300" fill="none"/>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="600" fill="white"/>
+  
+  <!-- Bottom Right Section - City Engagement Initiatives (Darker Gray) -->
+  <path d="M 300 300 Q 450 350 550 450 L 550 550 L 300 550 Z" fill="#4A4F57"/>
+  <text x="425" y="500" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle" transform="rotate(35 425 500)">
+    <tspan x="425" dy="0">CITY</tspan>
+    <tspan x="425" dy="17">ENGAGEMENT</tspan>
+    <tspan x="425" dy="17">INITIATIVES</tspan>
+  </text>
+  
+  <!-- Bottom Left Section - Movement Resources (Light Gray) -->
+  <path d="M 300 300 Q 150 350 50 450 L 50 550 L 300 550 Z" fill="#DCE1E5"/>
+  <text x="175" y="500" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle" transform="rotate(-35 175 500)">
+    <tspan x="175" dy="0">MOVEMENT</tspan>
+    <tspan x="175" dy="17">RESOURCES</tspan>
+  </text>
+  
+  <!-- Top Section - Church Multiplication (Dark Blue-Gray/Almost Black) -->
+  <path d="M 300 300 Q 300 150 300 50 L 50 50 L 550 50 L 550 200 Q 450 200 300 250 Z" fill="#1A1A1A"/>
+  <text x="300" y="130" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="middle">
+    <tspan x="300" dy="0">CHURCH</tspan>
+    <tspan x="300" dy="17">MULTIPLICATION</tspan>
+  </text>
+  
+  <!-- White Ring with Curved Text - Citywide Collaborative Structures -->
+  <circle cx="300" cy="300" r="130" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Curved text around the ring circumference -->
+  <text font-family="Arial, sans-serif" font-size="9" fill="#9CA3AF" font-weight="normal" letter-spacing="1.5" text-transform="uppercase">
+    <textPath href="#ringPath" startOffset="0%" text-anchor="middle" dominant-baseline="middle">
+      CITYWIDE COLLABORATIVE STRUCTURES
+    </textPath>
+  </text>
+  
+  <!-- Central GOSPEL Circle (Red) -->
+  <circle cx="300" cy="300" r="70" fill="#DC2626"/>
+  <text x="300" y="310" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="4" text-transform="uppercase">GOSPEL</text>
+</svg>

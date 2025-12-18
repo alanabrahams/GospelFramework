@@ -9,23 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Primary colors
-        "city-blue": "#1A4D7A",
-        "gospel-gold": "#D9A441",
-        // Secondary colors
-        "urban-steel": "#4A4F57",
-        "light-city-gray": "#DCE1E5",
-        "warm-sand": "#F3E9D7",
-        // Accent colors
-        "movement-teal": "#2F8F8C",
-        "grace-coral": "#E47A62",
+        // Landing page colors
+        "movement-teal": "#2F8F8C", // Teal accent color for completed states
+        "grace-coral": "#F87171", // Coral/red for errors
+        "redeemer-red": "#DC2626", // Red for logo/brand
+        
+        // Assessment & Results page colors
+        "warm-sand": "#F5F1E8", // Warm beige/cream background
+        "city-blue": "#1A4D7A", // Main blue color
+        "urban-steel": "#4A5568", // Dark gray text color
+        "gospel-gold": "#D9A441", // Yellow/gold accent color
+        "light-city-gray": "#E2E8F0", // Light gray for borders and backgrounds
       },
-      fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+      backgroundImage: {
+        'dot-pattern': 'radial-gradient(circle, #E2E8F0 1px, transparent 1px)',
+      },
+      backgroundSize: {
+        'dot-pattern': '20px 20px',
       },
     },
   },
   plugins: [],
 };
 export default config;
-

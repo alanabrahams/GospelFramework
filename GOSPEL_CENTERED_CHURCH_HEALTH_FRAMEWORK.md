@@ -711,3 +711,9 @@ The framework emphasizes that this is not about performance or comparison, but a
 
 *"The Gospel is not the ABCs of our individual and church lives — it is the A to Z."*
 
+
+
+
+
+
+

@@ -9,6 +9,7 @@ import {
   POINT_LABELS,
 } from "@/types/assessment-schema";
 import { getPointScoresArray } from "@/lib/calculations";
+import { submitAssessment } from "@/app/actions";
 
 export default function ResultsPage() {
   const router = useRouter();
@@ -16,9 +17,11 @@ export default function ResultsPage() {
     email: string;
     name: string;
     churchName: string;
+    assessment: any;
     scores: CalculatedScores;
   } | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
 
   useEffect(() => {
     const submissionStr = sessionStorage.getItem("submission");
@@ -36,6 +39,37 @@ export default function ResultsPage() {
       router.push("/");
     }
   }, [router]);
+
+  // Auto-save when submission is loaded
+  useEffect(() => {
+    if (!submission || saveStatus !== "idle") return;
+
+    const saveToDatabase = async () => {
+      setSaveStatus("saving");
+      try {
+        const result = await submitAssessment({
+          name: submission.name,
+          email: submission.email,
+          churchName: submission.churchName,
+          assessment: submission.assessment,
+          scores: submission.scores,
+          reflectionNotes: (submission as any).reflectionNotes,
+        });
+
+        if (result.success) {
+          setSaveStatus("saved");
+        } else {
+          console.error("Failed to save assessment:", result.error);
+          setSaveStatus("error");
+        }
+      } catch (error) {
+        console.error("Error saving assessment:", error);
+        setSaveStatus("error");
+      }
+    };
+
+    saveToDatabase();
+  }, [submission, saveStatus]);
 
   if (isLoading || !submission) {
     return (
@@ -65,6 +99,15 @@ export default function ResultsPage() {
             <p>
               <strong>Email:</strong> {submission.email}
             </p>
+            {saveStatus === "saving" && (
+              <p className="text-sm text-urban-steel italic">Saving results...</p>
+            )}
+            {saveStatus === "saved" && (
+              <p className="text-sm text-green-600">Results saved successfully</p>
+            )}
+            {saveStatus === "error" && (
+              <p className="text-sm text-grace-coral">Note: Results could not be saved to database</p>
+            )}
           </div>
         </div>
 
@@ -180,4 +223,5 @@ export default function ResultsPage() {
     </div>
   );
 }
+
 

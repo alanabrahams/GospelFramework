@@ -110,6 +110,14 @@ export const submissionSchema = userInfoSchema.merge(
 export type Submission = z.infer<typeof submissionSchema>;
 
 /**
+ * Reflection Notes Schema
+ * Maps sub-question IDs to user's private journal notes
+ */
+export const reflectionNotesSchema = z.record(z.string(), z.string());
+
+export type ReflectionNotes = z.infer<typeof reflectionNotesSchema>;
+
+/**
  * Calculated Scores Schema
  * Derived from assessment responses (not user input)
  */
@@ -161,4 +169,10 @@ export const SECTION_LABELS = {
   discipleship: "Discipleship",
   mission: "Mission",
 } as const;
+
+
+
+
+
+
 

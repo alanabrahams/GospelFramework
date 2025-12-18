@@ -11,17 +11,101 @@
           {
             "id": "1.1",
             "text": "Is Scripture viewed as the inerrant Word of God and used as the absolute standard for faith and practice?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "Cultural Pressures Dominate",
+                "description": "Scripture is often ignored or reinterpreted to fit cultural preferences. The Bible is not treated as authoritative."
+              },
+              {
+                "score": 2,
+                "label": "Scripture Secondary",
+                "description": "Scripture is respected but not consistently applied as the final authority. Cultural norms often override biblical teaching."
+              },
+              {
+                "score": 3,
+                "label": "Mixed Practice",
+                "description": "Scripture is generally viewed as authoritative, but application is inconsistent. Some areas follow biblical standards while others do not."
+              },
+              {
+                "score": 4,
+                "label": "Scripture Primary",
+                "description": "Scripture is consistently treated as the authoritative standard. Most decisions and practices align with biblical teaching."
+              },
+              {
+                "score": 5,
+                "label": "Scripture Absolute",
+                "description": "Scripture is the inerrant Word of God and the absolute standard for all faith and practice. It shapes every aspect of church life."
+              }
+            ],
+            "reflection_text": "Take a moment to reflect: How does your church's view of Scripture compare to the description you selected? What evidence do you see in your community's practices and decisions?"
           },
           {
             "id": "1.2",
             "text": "Is there a general understanding that the Gospel is the grand and central theme of the Bible?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "Gospel Absent",
+                "description": "The Gospel is rarely mentioned or understood. Teaching focuses on other themes without connecting to the Gospel."
+              },
+              {
+                "score": 2,
+                "label": "Gospel Peripheral",
+                "description": "The Gospel is mentioned occasionally but is not seen as central. It's treated as one theme among many."
+              },
+              {
+                "score": 3,
+                "label": "Gospel Recognized",
+                "description": "The Gospel is understood as important, but its centrality to all of Scripture is not consistently emphasized."
+              },
+              {
+                "score": 4,
+                "label": "Gospel Central",
+                "description": "The Gospel is consistently taught as the central theme of Scripture. Most teaching connects back to the Gospel."
+              },
+              {
+                "score": 5,
+                "label": "Gospel Everything",
+                "description": "The Gospel is the grand and central theme that shapes all teaching, preaching, and understanding of Scripture. Everything points to Christ."
+              }
+            ],
+            "reflection_text": "Reflect: When members read the Bible, do they see how every story, law, and prophecy points to Jesus? How is this understanding demonstrated in your church's teaching?"
           },
           {
             "id": "1.3",
             "text": "Are there clear pathways and practices that facilitate ongoing Gospel renewal?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Pathways",
+                "description": "There are no intentional practices or pathways for Gospel renewal. The church operates without regular spiritual refreshment."
+              },
+              {
+                "score": 2,
+                "label": "Informal Practices",
+                "description": "Some informal practices exist, but they are not clearly defined or consistently practiced across the church."
+              },
+              {
+                "score": 3,
+                "label": "Some Pathways",
+                "description": "There are some pathways for renewal, but they are not comprehensive or well-communicated to all members."
+              },
+              {
+                "score": 4,
+                "label": "Clear Pathways",
+                "description": "Clear pathways and practices exist for Gospel renewal. Most members know how to engage in ongoing spiritual refreshment."
+              },
+              {
+                "score": 5,
+                "label": "Comprehensive Renewal",
+                "description": "Multiple clear pathways and practices facilitate ongoing Gospel renewal. The entire church is equipped and engaged in regular spiritual refreshment."
+              }
+            ],
+            "reflection_text": "Consider: What specific practices help your church experience ongoing Gospel renewal? How accessible are these to every member?"
           }
         ]
       },
@@ -33,17 +117,101 @@
           {
             "id": "2.1",
             "text": "Is there consistent weekly corporate worship that invites members to glorify God and make the Gospel clear and near?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "Worship Inconsistent",
+                "description": "Corporate worship is irregular or absent. When it happens, it does not clearly glorify God or present the Gospel."
+              },
+              {
+                "score": 2,
+                "label": "Worship Occasional",
+                "description": "Worship happens sometimes but is not consistent. The Gospel is mentioned but not made clear and near."
+              },
+              {
+                "score": 3,
+                "label": "Regular Worship",
+                "description": "Weekly worship is regular, but the Gospel is not consistently clear. Some services glorify God more than others."
+              },
+              {
+                "score": 4,
+                "label": "Gospel-Centered Worship",
+                "description": "Consistent weekly worship clearly glorifies God and makes the Gospel clear and accessible to all."
+              },
+              {
+                "score": 5,
+                "label": "Transformative Worship",
+                "description": "Every weekly service is designed to glorify God and make the Gospel clear and near. Worship transforms hearts and minds."
+              }
+            ],
+            "reflection_text": "Reflect: How does your weekly worship service make the Gospel clear and near? What elements specifically point people to Christ?"
           },
           {
             "id": "2.2",
             "text": "Are sound, expository, Gospel-centered and contextual sermons preached weekly?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Sound Preaching",
+                "description": "Sermons are not sound, expository, or Gospel-centered. They may be topical without biblical grounding or context."
+              },
+              {
+                "score": 2,
+                "label": "Inconsistent Preaching",
+                "description": "Some sermons are sound and Gospel-centered, but many are not. Expository preaching is rare."
+              },
+              {
+                "score": 3,
+                "label": "Mixed Preaching",
+                "description": "Preaching is generally sound but not consistently expository or Gospel-centered. Context is sometimes considered."
+              },
+              {
+                "score": 4,
+                "label": "Solid Preaching",
+                "description": "Weekly sermons are sound, expository, and Gospel-centered. They are contextual and relevant to the congregation."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Preaching",
+                "description": "Every sermon is sound, expository, Gospel-centered, and deeply contextual. The Word is faithfully proclaimed and applied."
+              }
+            ],
+            "reflection_text": "Consider: How would you describe the preaching in your church? Does it faithfully exposit Scripture and center on the Gospel?"
           },
           {
             "id": "2.3",
             "text": "Are the sacraments/ordinances of baptism and the Lord's Supper practised regularly and meaningfully?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "Sacraments Neglected",
+                "description": "Baptism and the Lord's Supper are rarely practiced or are treated as mere traditions without meaning."
+              },
+              {
+                "score": 2,
+                "label": "Irregular Practice",
+                "description": "Sacraments are practiced occasionally but not regularly. Their meaning is not clearly communicated."
+              },
+              {
+                "score": 3,
+                "label": "Regular but Shallow",
+                "description": "Sacraments are practiced regularly, but their Gospel significance is not consistently emphasized or understood."
+              },
+              {
+                "score": 4,
+                "label": "Meaningful Practice",
+                "description": "Baptism and the Lord's Supper are practiced regularly with clear Gospel meaning. Members understand their significance."
+              },
+              {
+                "score": 5,
+                "label": "Rich Sacramental Life",
+                "description": "Sacraments are practiced regularly and meaningfully. They are central to worship and clearly point to the Gospel."
+              }
+            ],
+            "reflection_text": "Reflect: How do baptism and the Lord's Supper function in your church? Do they clearly point to the Gospel and Christ's work?"
           }
         ]
       },
@@ -55,17 +223,101 @@
           {
             "id": "3.1",
             "text": "Do elders and leaders enjoy and model a vibrant, Gospel-centered prayer life?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Prayer Model",
+                "description": "Leaders do not model prayer. Prayer is absent from leadership meetings and personal example."
+              },
+              {
+                "score": 2,
+                "label": "Minimal Prayer",
+                "description": "Leaders pray occasionally but do not model a vibrant prayer life. Prayer is not central to leadership."
+              },
+              {
+                "score": 3,
+                "label": "Some Prayer",
+                "description": "Leaders pray regularly, but it's not consistently vibrant or Gospel-centered. The model is inconsistent."
+              },
+              {
+                "score": 4,
+                "label": "Good Prayer Model",
+                "description": "Leaders model a vibrant, Gospel-centered prayer life. Prayer is central to leadership and visible to the church."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Prayer Model",
+                "description": "Leaders consistently model a vibrant, Gospel-centered prayer life. Their example inspires and equips the church."
+              }
+            ],
+            "reflection_text": "Consider: What does the prayer life of your leaders communicate to the church? How is prayer modeled in leadership?"
           },
           {
             "id": "3.2",
             "text": "Is prayer a regular and joyful part of everyday church life?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "Prayer Absent",
+                "description": "Prayer is rarely part of church life. It's seen as a duty rather than a joy."
+              },
+              {
+                "score": 2,
+                "label": "Prayer Occasional",
+                "description": "Prayer happens sometimes but is not a regular part of church life. It's not consistently joyful."
+              },
+              {
+                "score": 3,
+                "label": "Prayer Present",
+                "description": "Prayer is a regular part of church life, but it's not always joyful. It may feel routine or obligatory."
+              },
+              {
+                "score": 4,
+                "label": "Prayer Valued",
+                "description": "Prayer is a regular and generally joyful part of church life. Members engage in prayer together regularly."
+              },
+              {
+                "score": 5,
+                "label": "Prayer Central",
+                "description": "Prayer is a regular, joyful, and central part of everyday church life. The church is marked by a culture of prayer."
+              }
+            ],
+            "reflection_text": "Reflect: How would you describe the prayer culture in your church? Is prayer seen as a joy or a burden?"
           },
           {
             "id": "3.3",
             "text": "Are members being invited and equipped for a true and rich prayer life?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Equipping",
+                "description": "Members are not invited or equipped for prayer. Prayer is not taught or modeled."
+              },
+              {
+                "score": 2,
+                "label": "Minimal Equipping",
+                "description": "Some members are invited to pray, but equipping is minimal. Prayer is not systematically taught."
+              },
+              {
+                "score": 3,
+                "label": "Some Equipping",
+                "description": "Members are invited to pray and receive some equipping, but it's not comprehensive or consistent."
+              },
+              {
+                "score": 4,
+                "label": "Good Equipping",
+                "description": "Members are regularly invited and equipped for a rich prayer life. Prayer is taught and practiced together."
+              },
+              {
+                "score": 5,
+                "label": "Comprehensive Equipping",
+                "description": "All members are consistently invited and equipped for a true and rich prayer life. Prayer is central to discipleship."
+              }
+            ],
+            "reflection_text": "Consider: How does your church equip members for prayer? What resources and practices help people grow in prayer?"
           }
         ]
       }
@@ -83,17 +335,101 @@
           {
             "id": "4.1",
             "text": "Is the Gospel understood as the primary motivation for sanctification?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "Gospel Not Motivation",
+                "description": "The Gospel is not seen as motivation for growth. Sanctification is driven by rules, guilt, or performance."
+              },
+              {
+                "score": 2,
+                "label": "Mixed Motivation",
+                "description": "The Gospel is sometimes mentioned, but sanctification is primarily motivated by other factors like duty or fear."
+              },
+              {
+                "score": 3,
+                "label": "Gospel Recognized",
+                "description": "The Gospel is understood as important for motivation, but it's not consistently the primary driver of sanctification."
+              },
+              {
+                "score": 4,
+                "label": "Gospel Primary",
+                "description": "The Gospel is consistently taught as the primary motivation for sanctification. Growth flows from grace."
+              },
+              {
+                "score": 5,
+                "label": "Gospel Everything",
+                "description": "The Gospel is the clear and primary motivation for all sanctification. Everything flows from grace and gratitude."
+              }
+            ],
+            "reflection_text": "Reflect: What motivates people in your church to grow? Is it the Gospel or something else?"
           },
           {
             "id": "4.2",
             "text": "Is 'all of life' discipleship taught and practiced as part of church life?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No All-of-Life Discipleship",
+                "description": "Discipleship is limited to church activities. There's no teaching about following Jesus in all areas of life."
+              },
+              {
+                "score": 2,
+                "label": "Limited Practice",
+                "description": "All-of-life discipleship is mentioned but not consistently taught or practiced. It's mostly theoretical."
+              },
+              {
+                "score": 3,
+                "label": "Some Practice",
+                "description": "All-of-life discipleship is taught and practiced in some areas, but not comprehensively across the church."
+              },
+              {
+                "score": 4,
+                "label": "Good Practice",
+                "description": "All-of-life discipleship is consistently taught and practiced. Members are equipped to follow Jesus in all areas."
+              },
+              {
+                "score": 5,
+                "label": "Comprehensive Practice",
+                "description": "All-of-life discipleship is deeply embedded in church culture. Every area of life is seen as a place to follow Jesus."
+              }
+            ],
+            "reflection_text": "Consider: How does your church help people follow Jesus in their work, family, and daily life, not just at church?"
           },
           {
             "id": "4.3",
             "text": "Are there clear pathways for growth as disciples both for new believers and mature?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Clear Pathways",
+                "description": "There are no clear pathways for growth. New believers and mature Christians lack direction for discipleship."
+              },
+              {
+                "score": 2,
+                "label": "Unclear Pathways",
+                "description": "Some pathways exist but are not clear or well-communicated. People don't know how to grow."
+              },
+              {
+                "score": 3,
+                "label": "Some Pathways",
+                "description": "There are pathways for growth, but they may not be comprehensive or accessible to all members."
+              },
+              {
+                "score": 4,
+                "label": "Clear Pathways",
+                "description": "Clear pathways exist for growth at all stages. New believers and mature Christians know how to continue growing."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Pathways",
+                "description": "Comprehensive, clear pathways for growth exist for all stages. The church is structured to help everyone grow as disciples."
+              }
+            ],
+            "reflection_text": "Reflect: If someone new came to your church, would they know how to grow? What about someone who's been a Christian for 20 years?"
           }
         ]
       },
@@ -105,17 +441,101 @@
           {
             "id": "5.1",
             "text": "Is every member encouraged and equipped for ministry?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "Members Not Equipped",
+                "description": "Members are not encouraged or equipped for ministry. Ministry is limited to a few leaders."
+              },
+              {
+                "score": 2,
+                "label": "Limited Equipping",
+                "description": "Some members are encouraged, but equipping is minimal. Most ministry is done by a small group."
+              },
+              {
+                "score": 3,
+                "label": "Some Equipping",
+                "description": "Members are encouraged and receive some equipping, but not all members are actively engaged in ministry."
+              },
+              {
+                "score": 4,
+                "label": "Good Equipping",
+                "description": "Most members are encouraged and equipped for ministry. There's a culture of every-member ministry."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Equipping",
+                "description": "Every member is encouraged and equipped for ministry. The church operates with a strong every-member ministry model."
+              }
+            ],
+            "reflection_text": "Consider: What percentage of your members are actively engaged in ministry? How does your church equip people to serve?"
           },
           {
             "id": "5.2",
             "text": "Are small groups thriving, with leaders discipling members?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Small Groups",
+                "description": "There are no small groups, or they exist but are not functioning. Leaders are not discipling members."
+              },
+              {
+                "score": 2,
+                "label": "Weak Groups",
+                "description": "Small groups exist but are not thriving. Leaders may not be actively discipling members."
+              },
+              {
+                "score": 3,
+                "label": "Some Thriving",
+                "description": "Some small groups are thriving with leaders discipling members, but it's not consistent across all groups."
+              },
+              {
+                "score": 4,
+                "label": "Mostly Thriving",
+                "description": "Most small groups are thriving with leaders actively discipling members. There's a healthy small group culture."
+              },
+              {
+                "score": 5,
+                "label": "All Thriving",
+                "description": "Small groups are thriving across the church. Leaders are consistently discipling members in every group."
+              }
+            ],
+            "reflection_text": "Reflect: How would you describe the health of your small groups? Are leaders actively discipling members?"
           },
           {
             "id": "5.3",
             "text": "Is church discipline understood and practiced Biblically?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Discipline",
+                "description": "Church discipline is not understood or practiced. There's no process for addressing sin in the church."
+              },
+              {
+                "score": 2,
+                "label": "Discipline Avoided",
+                "description": "Church discipline is mentioned but rarely practiced. The church avoids addressing sin biblically."
+              },
+              {
+                "score": 3,
+                "label": "Inconsistent Practice",
+                "description": "Church discipline is understood but practiced inconsistently. Some situations are addressed, others are not."
+              },
+              {
+                "score": 4,
+                "label": "Biblical Practice",
+                "description": "Church discipline is understood and practiced biblically. The church addresses sin with grace and truth."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Practice",
+                "description": "Church discipline is deeply understood and consistently practiced biblically. It's done with Gospel-centered grace and truth."
+              }
+            ],
+            "reflection_text": "Consider: How does your church handle sin and conflict? Is there a biblical process that's both gracious and truthful?"
           }
         ]
       },
@@ -127,17 +547,101 @@
           {
             "id": "6.1",
             "text": "Does the church have a clear Leadership Development Pathway?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Pathway",
+                "description": "There is no clear pathway for leadership development. Leaders emerge without intentional equipping."
+              },
+              {
+                "score": 2,
+                "label": "Unclear Pathway",
+                "description": "Some leadership development exists but is not clear or systematic. The pathway is informal."
+              },
+              {
+                "score": 3,
+                "label": "Some Pathway",
+                "description": "There is a pathway for leadership development, but it may not be comprehensive or well-communicated."
+              },
+              {
+                "score": 4,
+                "label": "Clear Pathway",
+                "description": "A clear pathway exists for leadership development. Potential leaders know how to grow and be equipped."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Pathway",
+                "description": "A comprehensive, clear pathway for leadership development exists. The church systematically develops leaders at all levels."
+              }
+            ],
+            "reflection_text": "Reflect: If someone wanted to become a leader in your church, would they know the pathway? How clear is it?"
           },
           {
             "id": "6.2",
             "text": "Is there a clear pathway to identify and nurture Small Group Leaders?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Small Group Pathway",
+                "description": "There is no pathway to identify or nurture small group leaders. Leaders are chosen without clear process."
+              },
+              {
+                "score": 2,
+                "label": "Informal Process",
+                "description": "Small group leaders are identified informally, but there's no clear pathway for nurturing and equipping them."
+              },
+              {
+                "score": 3,
+                "label": "Some Pathway",
+                "description": "There is a pathway for small group leaders, but it may not be comprehensive or consistently applied."
+              },
+              {
+                "score": 4,
+                "label": "Clear Pathway",
+                "description": "A clear pathway exists to identify and nurture small group leaders. The process is well-defined and practiced."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Pathway",
+                "description": "A comprehensive pathway identifies and nurtures small group leaders. They are well-equipped and supported."
+              }
+            ],
+            "reflection_text": "Consider: How does your church identify potential small group leaders? How are they nurtured and equipped?"
           },
           {
             "id": "6.3",
             "text": "Is there a pathway to identify, assess, train, and commission Deacons and Elders?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Pathway",
+                "description": "There is no pathway to identify, assess, train, or commission deacons and elders. The process is unclear or absent."
+              },
+              {
+                "score": 2,
+                "label": "Informal Process",
+                "description": "Deacons and elders are chosen informally without a clear pathway for assessment, training, or commissioning."
+              },
+              {
+                "score": 3,
+                "label": "Partial Pathway",
+                "description": "Some elements of the pathway exist, but it's not comprehensive. Assessment or training may be missing."
+              },
+              {
+                "score": 4,
+                "label": "Clear Pathway",
+                "description": "A clear pathway exists to identify, assess, train, and commission deacons and elders. The process is biblical and consistent."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Pathway",
+                "description": "A comprehensive, biblical pathway exists for deacons and elders. They are carefully identified, assessed, trained, and commissioned."
+              }
+            ],
+            "reflection_text": "Reflect: How does your church identify and develop deacons and elders? Is the process biblical and clear?"
           }
         ]
       },
@@ -149,17 +653,101 @@
           {
             "id": "7.1",
             "text": "Is there regular and healthy preaching on generosity?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Preaching on Generosity",
+                "description": "Generosity is rarely or never preached. When mentioned, it may be manipulative or guilt-driven."
+              },
+              {
+                "score": 2,
+                "label": "Occasional Preaching",
+                "description": "Generosity is preached occasionally, but not regularly. The teaching may not be consistently healthy or Gospel-centered."
+              },
+              {
+                "score": 3,
+                "label": "Some Preaching",
+                "description": "Generosity is preached regularly, but it may not always be healthy or consistently Gospel-centered."
+              },
+              {
+                "score": 4,
+                "label": "Regular Healthy Preaching",
+                "description": "Generosity is preached regularly and healthily. It's taught in a Gospel-centered way that's not manipulative."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Preaching",
+                "description": "Generosity is regularly and excellently preached. It's consistently Gospel-centered, healthy, and transformative."
+              }
+            ],
+            "reflection_text": "Consider: How is generosity taught in your church? Is it Gospel-centered and healthy, or does it feel manipulative?"
           },
           {
             "id": "7.2",
             "text": "Is there a culture of generosity and consistent giving?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Culture of Generosity",
+                "description": "There is no culture of generosity. Giving is minimal or inconsistent. Members are not generous."
+              },
+              {
+                "score": 2,
+                "label": "Weak Culture",
+                "description": "Some generosity exists, but it's not a strong culture. Giving is inconsistent across the church."
+              },
+              {
+                "score": 3,
+                "label": "Growing Culture",
+                "description": "A culture of generosity is developing. Many members give consistently, but it's not yet pervasive."
+              },
+              {
+                "score": 4,
+                "label": "Strong Culture",
+                "description": "There is a strong culture of generosity. Most members give consistently and generously."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Culture",
+                "description": "An excellent culture of generosity permeates the church. Consistent, generous giving is the norm."
+              }
+            ],
+            "reflection_text": "Reflect: How would you describe the giving culture in your church? Is generosity a mark of your community?"
           },
           {
             "id": "7.3",
             "text": "Are all church operations funded through member giving (self-supporting)?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "Not Self-Supporting",
+                "description": "The church is not self-supporting. Operations depend heavily on external funding or are unsustainable."
+              },
+              {
+                "score": 2,
+                "label": "Partially Supported",
+                "description": "Some operations are funded by members, but the church relies significantly on external support."
+              },
+              {
+                "score": 3,
+                "label": "Mostly Self-Supporting",
+                "description": "Most operations are funded by members, but there may be some reliance on external support."
+              },
+              {
+                "score": 4,
+                "label": "Self-Supporting",
+                "description": "All church operations are funded through member giving. The church is self-supporting."
+              },
+              {
+                "score": 5,
+                "label": "Fully Self-Supporting",
+                "description": "All operations are fully funded through member giving. The church is not only self-supporting but also generous to others."
+              }
+            ],
+            "reflection_text": "Consider: Is your church self-supporting? How does member giving compare to your operational needs?"
           }
         ]
       }
@@ -177,17 +765,101 @@
           {
             "id": "8.1",
             "text": "Is the church ministering to Christians and non-Christians simultaneously in worship?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "Not Ministering to Both",
+                "description": "Worship is designed for only one group—either Christians or non-Christians, but not both simultaneously."
+              },
+              {
+                "score": 2,
+                "label": "Primarily One Group",
+                "description": "Worship primarily serves one group. The other group is considered but not intentionally ministered to."
+              },
+              {
+                "score": 3,
+                "label": "Some Balance",
+                "description": "Worship attempts to minister to both groups, but the balance is inconsistent or not well-executed."
+              },
+              {
+                "score": 4,
+                "label": "Good Balance",
+                "description": "Worship effectively ministers to both Christians and non-Christians simultaneously. Both groups are intentionally served."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Balance",
+                "description": "Worship excellently ministers to both groups simultaneously. The service is designed to serve believers and seekers together."
+              }
+            ],
+            "reflection_text": "Reflect: How does your worship service serve both believers and non-believers? Is it accessible to both?"
           },
           {
             "id": "8.2",
             "text": "Are vibrant Faith & Work practices integrated into discipleship?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Faith & Work Integration",
+                "description": "Faith and work are not integrated. Work is seen as separate from faith, and there's no teaching on this."
+              },
+              {
+                "score": 2,
+                "label": "Minimal Integration",
+                "description": "Faith and work are mentioned occasionally, but there's no vibrant integration into discipleship."
+              },
+              {
+                "score": 3,
+                "label": "Some Integration",
+                "description": "Faith and work are integrated in some ways, but it's not consistently vibrant or comprehensive."
+              },
+              {
+                "score": 4,
+                "label": "Good Integration",
+                "description": "Vibrant Faith & Work practices are integrated into discipleship. Members are equipped to serve God in their work."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Integration",
+                "description": "Vibrant Faith & Work practices are deeply integrated into discipleship. Work is seen as a primary place of mission."
+              }
+            ],
+            "reflection_text": "Consider: How does your church help people see their work as mission? Is Faith & Work part of discipleship?"
           },
           {
             "id": "8.3",
             "text": "Is there intentional and compassionate practice of Mercy and Justice?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Mercy & Justice",
+                "description": "There is no intentional practice of mercy and justice. The church does not engage in compassionate action."
+              },
+              {
+                "score": 2,
+                "label": "Occasional Practice",
+                "description": "Mercy and justice are practiced occasionally, but not intentionally or consistently across the church."
+              },
+              {
+                "score": 3,
+                "label": "Some Practice",
+                "description": "There is some intentional practice of mercy and justice, but it may not be comprehensive or consistently compassionate."
+              },
+              {
+                "score": 4,
+                "label": "Good Practice",
+                "description": "Intentional and compassionate practice of mercy and justice is a regular part of church life."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Practice",
+                "description": "Intentional and compassionate practice of mercy and justice is central to the church's mission and identity."
+              }
+            ],
+            "reflection_text": "Reflect: How does your church practice mercy and justice? Is it intentional, compassionate, and integrated into mission?"
           }
         ]
       },
@@ -199,17 +871,101 @@
           {
             "id": "9.1",
             "text": "Do believers understand the Gospel clearly and are they being equipped to share it?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Understanding or Equipping",
+                "description": "Believers do not clearly understand the Gospel and are not equipped to share it. Evangelism is rare."
+              },
+              {
+                "score": 2,
+                "label": "Limited Understanding",
+                "description": "Some believers understand the Gospel, but equipping to share it is minimal. Most are not equipped."
+              },
+              {
+                "score": 3,
+                "label": "Some Equipping",
+                "description": "Believers generally understand the Gospel and receive some equipping, but it's not comprehensive."
+              },
+              {
+                "score": 4,
+                "label": "Good Equipping",
+                "description": "Believers clearly understand the Gospel and are well-equipped to share it. Most members can articulate the Gospel."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Equipping",
+                "description": "All believers clearly understand the Gospel and are excellently equipped to share it. Evangelism is natural and common."
+              }
+            ],
+            "reflection_text": "Consider: Can most members of your church clearly explain the Gospel? How are they equipped to share it?"
           },
           {
             "id": "9.2",
             "text": "Are members building friendships with non-Christians and engaging them in Gospel conversations?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Friendships",
+                "description": "Members are not building friendships with non-Christians. Gospel conversations are rare or absent."
+              },
+              {
+                "score": 2,
+                "label": "Limited Friendships",
+                "description": "Some members have friendships with non-Christians, but Gospel conversations are infrequent."
+              },
+              {
+                "score": 3,
+                "label": "Some Engagement",
+                "description": "Many members have friendships with non-Christians, and some Gospel conversations happen, but it's not widespread."
+              },
+              {
+                "score": 4,
+                "label": "Good Engagement",
+                "description": "Most members are building friendships with non-Christians and regularly engaging in Gospel conversations."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Engagement",
+                "description": "Members consistently build friendships with non-Christians and regularly engage in natural Gospel conversations."
+              }
+            ],
+            "reflection_text": "Reflect: How many members of your church have meaningful friendships with non-Christians? Are Gospel conversations happening?"
           },
           {
             "id": "9.3",
             "text": "Do members understand and address cultural \"defeater beliefs\" winsomely?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Understanding",
+                "description": "Members do not understand defeater beliefs and cannot address them. Cultural objections are ignored or mishandled."
+              },
+              {
+                "score": 2,
+                "label": "Limited Understanding",
+                "description": "Some members understand defeater beliefs, but most cannot address them winsomely. Responses may be defensive."
+              },
+              {
+                "score": 3,
+                "label": "Some Ability",
+                "description": "Many members understand defeater beliefs and can address some of them, but not consistently winsomely."
+              },
+              {
+                "score": 4,
+                "label": "Good Ability",
+                "description": "Most members understand and can address cultural defeater beliefs winsomely. The church is equipped for this."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Ability",
+                "description": "Members consistently understand and winsomely address cultural defeater beliefs. The church is well-equipped for cultural engagement."
+              }
+            ],
+            "reflection_text": "Consider: How does your church help people understand and respond to common objections to Christianity? Is it done winsomely?"
           }
         ]
       },
@@ -221,21 +977,104 @@
           {
             "id": "10.1",
             "text": "Do leaders and members understand and appreciate the Biblical charge to plant churches?",
-            "order": 1
+            "order": 1,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Understanding",
+                "description": "Leaders and members do not understand or appreciate the biblical charge to plant churches. It's not on the radar."
+              },
+              {
+                "score": 2,
+                "label": "Limited Understanding",
+                "description": "Some leaders understand church planting, but it's not widely appreciated. The charge is not clearly communicated."
+              },
+              {
+                "score": 3,
+                "label": "Some Understanding",
+                "description": "Leaders and many members understand the charge to plant churches, but it's not deeply appreciated or prioritized."
+              },
+              {
+                "score": 4,
+                "label": "Good Understanding",
+                "description": "Leaders and most members understand and appreciate the biblical charge to plant churches. It's part of the vision."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Understanding",
+                "description": "Leaders and members deeply understand and appreciate the biblical charge to plant churches. It's central to identity."
+              }
+            ],
+            "reflection_text": "Reflect: How does your church view church planting? Is it seen as a biblical mandate or an optional activity?"
           },
           {
             "id": "10.2",
             "text": "Does the church have meaningful partnerships with other churches and para-church organizations?",
-            "order": 2
+            "order": 2,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Partnerships",
+                "description": "The church has no meaningful partnerships. It operates in isolation from other churches and organizations."
+              },
+              {
+                "score": 2,
+                "label": "Limited Partnerships",
+                "description": "Some partnerships exist but are not meaningful or strategic. The church is mostly isolated."
+              },
+              {
+                "score": 3,
+                "label": "Some Partnerships",
+                "description": "The church has some meaningful partnerships, but they may not be comprehensive or consistently engaged."
+              },
+              {
+                "score": 4,
+                "label": "Good Partnerships",
+                "description": "The church has meaningful partnerships with other churches and para-church organizations. Collaboration is regular."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Partnerships",
+                "description": "The church has excellent, strategic partnerships. It works collaboratively with others for the sake of the Gospel."
+              }
+            ],
+            "reflection_text": "Consider: What partnerships does your church have? Are they meaningful and strategic for the Gospel?"
           },
           {
             "id": "10.3",
             "text": "Does the leadership demonstrate a movement mindset and intentionally live it out?",
-            "order": 3
+            "order": 3,
+            "options": [
+              {
+                "score": 1,
+                "label": "No Movement Mindset",
+                "description": "Leadership does not demonstrate a movement mindset. The church operates as an isolated institution."
+              },
+              {
+                "score": 2,
+                "label": "Limited Mindset",
+                "description": "Some leaders have a movement mindset, but it's not consistently demonstrated or intentionally lived out."
+              },
+              {
+                "score": 3,
+                "label": "Some Demonstration",
+                "description": "Leadership demonstrates a movement mindset in some ways, but it's not comprehensive or consistently intentional."
+              },
+              {
+                "score": 4,
+                "label": "Good Demonstration",
+                "description": "Leadership consistently demonstrates a movement mindset and intentionally lives it out. The church thinks beyond itself."
+              },
+              {
+                "score": 5,
+                "label": "Excellent Demonstration",
+                "description": "Leadership excellently demonstrates a movement mindset and intentionally lives it out. The church is part of a larger movement."
+              }
+            ],
+            "reflection_text": "Reflect: Does your church think like a movement or an institution? How is this demonstrated in leadership decisions?"
           }
         ]
       }
     ]
   }
 }
-
