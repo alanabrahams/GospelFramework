@@ -185,7 +185,7 @@ export default function LandingPage() {
           {/* Hero Quote - Centered */}
           <div className="max-w-2xl mb-12 text-center">
             <p className="text-3xl md:text-4xl font-serif text-city-blue italic leading-relaxed mb-8">
-              "The Gospel is not the ABCs of our lives — it is the A to Z."
+              &ldquo;The Gospel is not the ABCs of our lives — it is the A to Z.&rdquo;
             </p>
           </div>
 

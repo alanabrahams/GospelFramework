@@ -66,6 +66,11 @@ export default function ReviewAnswers({
   };
 
   const questionsWithAnswers = getAllQuestionsWithAnswers();
+  
+  // Filter to only show answered questions
+  const answeredQuestions = questionsWithAnswers.filter(item => 
+    item.answer !== null && item.answer !== undefined
+  );
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
@@ -92,8 +97,13 @@ export default function ReviewAnswers({
 
           {/* Content */}
           <div className="max-h-[70vh] overflow-y-auto px-6 py-4">
-            <div className="space-y-6">
-              {questionsWithAnswers.map((item, index) => {
+            {answeredQuestions.length === 0 ? (
+              <div className="text-center py-8">
+                <p className="text-urban-steel">No answers to review yet. Start answering questions to see them here.</p>
+              </div>
+            ) : (
+              <div className="space-y-6">
+                {answeredQuestions.map((item, index) => {
                 const isAnswered = item.answer !== null;
                 const isCurrent = item.question.id === currentQuestionId;
                 const option = item.question.options.find(
@@ -126,7 +136,7 @@ export default function ReviewAnswers({
                         <h3 className="mb-2 text-lg font-semibold text-city-blue">
                           {item.question.text}
                         </h3>
-                        {isAnswered && option ? (
+                        {option && (
                           <div className="space-y-2">
                             <div className="flex items-center gap-2">
                               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-city-blue text-sm font-bold text-white">
@@ -146,27 +156,24 @@ export default function ReviewAnswers({
                               </div>
                             )}
                           </div>
-                        ) : (
-                          <p className="text-sm italic text-gray-400">Not answered yet</p>
                         )}
                       </div>
-                      {isAnswered && (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            onNavigateToQuestion(item.question.id);
-                            onClose();
-                          }}
-                          className="rounded-lg border border-city-blue px-3 py-1.5 text-sm font-medium text-city-blue hover:bg-city-blue/10 transition-colors"
-                        >
-                          View
-                        </button>
-                      )}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          onNavigateToQuestion(item.question.id);
+                          onClose();
+                        }}
+                        className="rounded-lg border border-city-blue px-3 py-1.5 text-sm font-medium text-city-blue hover:bg-city-blue/10 transition-colors"
+                      >
+                        View
+                      </button>
                     </div>
                   </div>
                 );
               })}
-            </div>
+              </div>
+            )}
           </div>
 
           {/* Footer */}

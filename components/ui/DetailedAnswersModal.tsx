@@ -1,7 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
-import type { QuestionsData, SubQuestion } from "@/types/questions";
+import type { QuestionsData, SubQuestion, Point } from "@/types/questions";
 
 interface DetailedAnswersModalProps {
   isOpen: boolean;
@@ -62,7 +62,7 @@ export default function DetailedAnswersModal({
   const pointIdToSection: Record<string, { section: any; pointId: string }> = {};
   if (questions) {
     Object.values(questions).forEach((section) => {
-      section.points.forEach((point) => {
+      section.points.forEach((point: Point) => {
         pointIdToSection[point.id] = { section, pointId: point.id };
       });
     });
@@ -104,7 +104,7 @@ export default function DetailedAnswersModal({
                   </h3>
                   
                   {/* Iterate through points in this section */}
-                  {section.points.map((point) => {
+                  {section.points.map((point: Point) => {
                     const pointScore = assessment.scores_json[point.id];
                     if (!pointScore) return null;
                     
